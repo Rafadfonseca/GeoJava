@@ -1,4 +1,4 @@
-package geometria;
+package geometrias;
 public class plana {
 
     float operacao;
