@@ -68,48 +68,43 @@ public class atv6 {
                 System.out.print("Informe a sua altura:");
                 double altura = scanner.nextDouble();
                 break;
-            default:
-                System.out.println("Opção inválida.");
-                return;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        System.out.print("Informe o seu :");
-        double n1 = scanner.nextDouble();
-        System.out.print("Informe o segundo valor:");
-        double n2 = scanner.nextDouble();
- 
-        double resultado = 0;
- 
-        switch (escolha) {
-            case 1:
-                resultado = n1 + n2;
+            case 5:
+                System.out.print("Informe o seu lado a:");
+                double ladoa = scanner.nextDouble();
+                System.out.print("Informe o seu lado b:");
+                double ladob = scanner.nextDouble();
+                System.out.print("Informe a sua altura:");
+                double altura = scanner.nextDouble();
                 break;
-            case 2:
-                resultado = n1 - n2;
+            case 6:
+                System.out.print("Informe o seu lado:");
+                double lado = scanner.nextDouble();
+                System.out.print("Informe a sua diametro a:");
+                double diametroa = scanner.nextDouble();
+                System.out.print("Informe a sua diametro b:");
+                double diametrob = scanner.nextDouble();
                 break;
-            case 3:
-                resultado = n1 * n2;
+            case 7:
+                System.out.print("Informe o seu lado a:");
+                double ladoa = scanner.nextDouble();
+                System.out.print("Informe o seu lado b:");
+                double ladob = scanner.nextDouble();
+                System.out.print("Informe o seu base a:");
+                double basea = scanner.nextDouble();
+                System.out.print("Informe o seu base b:");
+                double baseb = scanner.nextDouble();
+                System.out.print("Informe a sua altura:");
+                double altura = scanner.nextDouble();
                 break;
-            case 4:
-                resultado = n1 / n2;
+            case 8:
+                System.out.print("Informe o seu raio:");
+                double lado = scanner.nextDouble();
                 break;
             default:
                 System.out.println("Opção inválida.");
                 return;
-        }
+
+
  
         System.out.println("Resultado: " + resultado);
  
