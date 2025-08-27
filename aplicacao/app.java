@@ -1,4 +1,5 @@
 package aplicacao;
+import gemetrias.*;
 import java.util.Scanner;
 
 public class app {

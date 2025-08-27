@@ -5,6 +5,11 @@ public class espacial {
 
 
     public float esfera() {
+
+        //cada forma
+        public double ;
+
+
         float raio = 0, areaSuperficial, volume; //soma, sub;
         areaSuperficial = (float) (4 * Math.PI * (Math.pow(raio, 2)));
         //4 pi r^2
@@ -82,6 +87,20 @@ public class espacial {
         }
 
     }
+
+    public float troncoCone(){
+        double altura, raioBaseMenor, raioBaseMaior, volume;
+
+        volume= (Math.PI * altura * ((Math.pow(raioBaseMenor, 2)) + raioBaseMenor * raioBaseMaior + (Math.pow(raioBaseMaior, 2))) / 3);
+
+        if (operacao == 1){
+            return (float) volume;
+        } else{
+            System.out.println("Opcão inválida");
+            return;
+        }
+    }
+
 
 }
 

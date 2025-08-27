@@ -11,8 +11,8 @@ public class teste {
         System.out.print("Qual operação a cima você quer:");
  
         int operacao = scanner.nextInt();
-        
-        
+       
+       
         switch (operacao) {
             case 1:
                 System.out.println("1-Quadrado");
@@ -39,8 +39,8 @@ public class teste {
                 System.out.println("Opção inválida.");
                 return;
         }
-
-
+ 
+ 
          switch (figura) {
             case 1:
                 System.out.print("Informe o seu lado:");
@@ -60,7 +60,7 @@ public class teste {
                 System.out.print("Informe o seu lado c:");
                 double ladoc = scanner.nextDouble();
                 System.out.print("Informe a sua altura:");
-                double altura = scanner.nextDouble();
+                douv ble altura = scanner.nextDouble();
                 break;
             case 4:
                 System.out.print("Informe o seu lado:");
@@ -135,8 +135,8 @@ public class teste {
             default:
                 System.out.println("Opção inválida.");
                 return;
-
-
+ 
+ 
  
         System.out.println("Resultado: " + resultado);
  
