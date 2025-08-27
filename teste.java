@@ -98,7 +98,39 @@ public class teste {
                 break;
             case 8:
                 System.out.print("Informe o seu raio:");
-                double lado = scanner.nextDouble();
+                double raio = scanner.nextDouble();
+                break;
+            case 9:
+                System.out.print("Informe a sua área da base:");
+                double areaBase = scanner.nextDouble();
+                System.out.print("Informe a sua altura:");
+                double altura = scanner.nextDouble();
+                break;
+            case 10:
+                System.out.print("Informe o seu raio:");
+                double raio = scanner.nextDouble();
+                System.out.print("Informe a sua altura:");
+                double altura = scanner.nextDouble();
+                break;
+            case 11:
+                System.out.print("Informe a sua base:");
+                double baseTriangulo = scanner.nextDouble();
+                System.out.print("Informe a sua altura:");
+                double altura = scanner.nextDouble();
+                System.out.print("Informe a sua área da base:");
+                double areaBase = scanner.nextDouble();
+                break;
+            case 12:
+                System.out.print("Informe o seu raio:");
+                double raio = scanner.nextDouble();
+                System.out.print("Informe a sua geratriz:");
+                double geratriz = scanner.nextDouble();
+                System.out.print("Informe a sua altura:");
+                double altura = scanner.nextDouble();
+                break;
+            case 13:
+                System.out.print("Informe o seu raio:");
+                double raio = scanner.nextDouble();
                 break;
             default:
                 System.out.println("Opção inválida.");
