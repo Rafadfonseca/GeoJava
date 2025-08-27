@@ -1,6 +1,6 @@
 import java.util.Scanner;
  
-public class atv6 {
+public class teste {
  
     @SuppressWarnings("resource")
     public static void main(String[] args) {
@@ -110,4 +110,4 @@ public class atv6 {
  
         scanner.close();
     }
-}
+}}
