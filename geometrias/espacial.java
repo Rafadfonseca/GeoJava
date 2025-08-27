@@ -3,102 +3,68 @@ package geometrias;
 public class espacial {
     Float operacao; 
 
+    // esfera
+    public double raio;
+    public double areaSuperficial;
+    public double volume;
 
-    public float esfera() {
+    // cone
+    public double geratriz;
+    public double altura;
+    public double areaLateral;
+    public double areaBase;
 
-        //cada forma
-        public double ;
+    // cilindro  double raio = 0, altura = 0, areaBases, areaLateral, volume;
+    public double areaBases;
+
+    // piramide triangular e prisma
+    public double baseTriangulo;
+    public double areaTotal;
 
 
-        float raio = 0, areaSuperficial, volume; //soma, sub;
+    //tronco de cone
+    public double raioBaseMenor;
+    public double raioBaseMaior;
+
+
+
+    public void esfera() {
+
         areaSuperficial = (float) (4 * Math.PI * (Math.pow(raio, 2)));
-        //4 pi r^2
         volume = (float) ((4 / 3) * Math.PI * (Math.pow(raio, 3)));
-        
-        if( operacao == 1){
-            return areaSuperficial;
-        }else{
-            return volume;
-        }
     }
 
-    public float cone(){
-        float raio = 0, geratriz = 0, altura = 0, areaLateral, areaBase, volume;
-        
+    public void cone(){
+
         areaLateral = (float) (Math.PI * raio * geratriz);
         areaBase = (float) (Math.PI * (Math.pow(raio, 2)));
         volume = (float) ((Math.PI * (Math.pow(raio, 2)) * altura) / 2);
-
-        if( operacao == 1){
-            return areaLateral;
-        } if (operacao == 2){
-            return (float) areaBase;
-        } else{
-            return (float) volume;
-        }
     }
 
-    public float cilindro(){
-        double raio = 0, altura = 0, areaBases, areaLateral, volume;
+    public void cilindro(){
 
         areaBases = Math.PI * (Math.pow(raio, 2));
         areaLateral = (2 * Math.PI) * raio * altura;
         volume = Math.PI * (Math.pow(raio, 2)) * altura;
-
-        if( operacao == 1){
-            return (float) areaBases;
-        } if (operacao == 2){
-            return (float) areaLateral;
-        } else{
-            return (float) volume;
-        }
     }
 
-    public float piramideTriangular(){
-        double altura = 0, areaLateral, baseTriangulo = 0, areaBase=0, areaTotal, volume;
+    public void piramideTriangular(){
 
         areaLateral = ((baseTriangulo * altura) /2) * 3;
         areaTotal = (areaBase + areaLateral);
         volume = areaBase * altura;
-
-        if( operacao == 1){
-            return (float) areaLateral;
-        } if (operacao == 2){
-            return (float) areaTotal;
-        } else{
-            return (float) volume;
-        }
-
     }
 
-    public float prismaRetangular(){
-        double areaLateral, areaBase=0, altura=0, areaTotal, volume;
+    public void prismaRetangular(){
         
         areaLateral = (areaBase * 4);
         areaTotal = (areaBase + areaLateral);
         volume = areaBase * altura;
-
-        if( operacao == 1){
-            return (float) areaLateral;
-        } if (operacao == 2){
-            return (float) areaTotal;
-        } else{
-            return (float) volume;
-        }
-
     }
 
-    public float troncoCone(){
-        double altura, raioBaseMenor, raioBaseMaior, volume;
+    public void troncoCone(){
 
         volume= (Math.PI * altura * ((Math.pow(raioBaseMenor, 2)) + raioBaseMenor * raioBaseMaior + (Math.pow(raioBaseMaior, 2))) / 3);
-
-        if (operacao == 1){
-            return (float) volume;
-        } else{
-            System.out.println("Opcão inválida");
-            return;
-        }
     }
 
 
