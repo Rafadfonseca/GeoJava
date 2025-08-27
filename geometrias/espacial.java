@@ -67,7 +67,7 @@ public class espacial {
     }
 
     public float prismaRetangular(){
-        double areaLateral, areaBase, altura, areaTotal, volume;
+        double areaLateral, areaBase=0, altura=0, areaTotal, volume;
         
         areaLateral = (areaBase * 4);
         areaTotal = (areaBase + areaLateral);
