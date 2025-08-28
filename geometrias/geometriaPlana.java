@@ -1,5 +1,7 @@
 package geometrias;
 
+import java.util.Scanner;
+
 public class geometriaPlana {
 
     //quadrado
@@ -67,6 +69,11 @@ public class geometriaPlana {
     public void circulo() {
         this.area = Math.PI * (Math.pow(raio, 2));
         this.comprimento = 2 * Math.PI * raio;
+    }
+
+    public static void calcular(int categoria, String formaGeometrica, Scanner scanner) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcular'");
     }
 
 }

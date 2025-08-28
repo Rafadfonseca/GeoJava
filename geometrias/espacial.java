@@ -1,5 +1,7 @@
 package geometrias;
 
+import java.util.Scanner;
+
 public class espacial {
     Float operacao; 
 
@@ -65,6 +67,11 @@ public class espacial {
     public void troncoCone(){
 
         volume= (Math.PI * altura * ((Math.pow(raioBaseMenor, 2)) + raioBaseMenor * raioBaseMaior + (Math.pow(raioBaseMaior, 2))) / 3);
+    }
+
+    public static void calcular(int categoria, String formaGeometrica, Scanner scanner) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcular'");
     }
 
 

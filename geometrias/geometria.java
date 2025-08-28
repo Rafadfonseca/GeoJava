@@ -1,11 +1,10 @@
+package geometrias;
 import java.util.Scanner;
-
-import geometrias.geometriaPlana;
 
 public class geometria {
     
     public static double quadrado() {
-        double retorno
+        double retorno;
 
         geometriaPlana objQuadrado = new geometriaPlana();
 
