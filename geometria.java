@@ -136,4 +136,104 @@ public class geometria {
     }
 
 
+
+    //parte da geomatria espacial
+    
+    public static void esfera() {
+        double retorno;
+
+        geometriaEspacial objesfera = new geometriaEspacial();
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite o raio do seu esfera:");
+        objesfera.raio = ler.nextDouble();
+
+        objcirculo.esfera();
+        System.out.println(objesfera.areaSuperficial);
+        System.out.println(objesfera.volume);
+    }
+    public static void cone() {
+        double retorno;
+
+        geometriaEspacial objcone = new geometriaEspacial();
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite a altura do seu cone:");
+        objcone.altura = ler.nextDouble();
+        System.out.println("Digite a geratriz do seu cone:");
+        objcone.geratriz = ler.nextDouble();
+        System.out.println("Digite o raio do seu cone:");
+        objcone.raio = ler.nextDouble();
+
+        objcirculo.cone();
+        System.out.println(objcone.areaLateral);
+        System.out.println(objcone.areaBase);
+        System.out.println(objcone.volume);
+    }
+    public static void cilindro() {
+        double retorno;
+
+        geometriaEspacial objcilindro = new geometriaEspacial();
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite a altura do seu cilíndro:");
+        objcilindro.altura = ler.nextDouble();
+        System.out.println("Digite o raio do seu cilíndro:");
+        objcilindro.raio = ler.nextDouble();
+
+        objcirculo.cilindro();
+        System.out.println(objcone.areaLateral);
+        System.out.println(objcone.areaBases);
+        System.out.println(objcone.volume);
+    }
+    public static void piramideTriangular() {
+        double retorno;
+
+        geometriaEspacial objpiramideTriangular = new geometriaEspacial();
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite a altura da sua pirâmide triangular:");
+        objpiramideTriangular.altura = ler.nextDouble();
+        System.out.println("Digite a base do seu triangulo:");
+        objpiramideTriangular.baseTriangulo = ler.nextDouble();
+        System.out.println("Digite a área da base da sua pirâmide triangular:");
+        objpiramideTriangular.areaBase = ler.nextDouble();
+
+        objcirculo.piramideTriangular();
+        System.out.println(objpiramideTriangular.areaLateral);
+        System.out.println(objpiramideTriangular.areaTotal);
+        System.out.println(objpiramideTriangular.volume);
+    }
+    public static void prismaRetangular() {
+        double retorno;
+
+        geometriaEspacial objprismaRetangular = new geometriaEspacial();
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite a altura do seu prisma retângular:");
+        objprismaRetangular.altura = ler.nextDouble();
+        System.out.println("Digite a área da base do seu prisma retângular:");
+        objprismaRetangular.areaBase = ler.nextDouble();
+
+        objcirculo.prismaRetangular();
+        System.out.println(objprismaRetangular.areaLateral);
+        System.out.println(objprismaRetangular.areaTotal);
+        System.out.println(objprismaRetangular.volume);
+    }
+    public static void troncoCone() {
+        double retorno;
+
+        geometriaEspacial objtroncoCone = new geometriaEspacial();
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite a altura do seu tronco cone:");
+        objtroncoCone.altura = ler.nextDouble();
+        System.out.println("Digite o raio da base menor do seu troncoCone:");
+        objtroncoCone.raioBaseMenor = ler.nextDouble();
+        System.out.println("Digite o raio da base maior do seu troncoCone:");
+        objtroncoCone.raioBaseMaior = ler.nextDouble();
+
+        objcirculo.troncoCone();
+        System.out.println(objtroncoCone.volume);
+    }
 }
