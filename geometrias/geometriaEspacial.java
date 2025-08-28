@@ -2,7 +2,7 @@ package geometrias;
 
 import java.util.Scanner;
 
-public class espacial {
+public class geometriaEspacial { //Rafa, mudei o nome aq tbm (tava só "espacial" e dava conflito c o nome da class "geometriaEspacial")
     Float operacao; 
 
     // esfera

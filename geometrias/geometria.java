@@ -3,19 +3,21 @@ import java.util.Scanner;
 
 public class geometria {
     
-    public static double quadrado() {
+    public static String quadrado() { //Rafa, mudei pra String (tava double e nao funcionava)
         double retorno;
 
         geometriaPlana objQuadrado = new geometriaPlana();
 
         Scanner ler = new Scanner(System.in);
         System.out.println("Digite o lado do seu quadrado:");
-        objQuadrado.lado = ler.nextDouble();
+        objQuadrado.lado = ler.nextInt();
 
         objQuadrado.quadrado();
-        System.out.println(objQuadrado.area);
-        System.out.println(objQuadrado.perimetro);
+        //System.out.println( "A área do seu quadrado é: " + objQuadrado.area); //rafa, da pra tirar essa parte pq precisa de um string q é o return, e isso da os dados de novo, so com return fica mais facil, so nao apaguei p tu ver 
+        //System.out.println("O perímetro do seu quadrado é:" + objQuadrado.perimetro); //rafa, da pra tirar essa parte pq precisa de um string q é o return, e isso da os dados de novo, so com return fica mais facil, so nao apaguei p tu ver 
+        return "Área: " + objQuadrado.area + " Perímetro: " + objQuadrado.perimetro;
     }
+
     public static void retangulo() {
         double retorno;
 
