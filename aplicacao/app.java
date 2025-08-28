@@ -1,11 +1,13 @@
 package aplicacao;
-import gemetrias.*;
+import geometrias.*;
 import java.util.Scanner;
 
 public class app {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        espacial espacialValendo = new espacial ();
+        geometriaPlana planaValendo = new geometriaPlana ();
 
         System.out.println("Escolha umaa categoria:");
         System.out.println("1. Geometria plana");
@@ -27,6 +29,8 @@ public class app {
                 System.out.println("7-Trapézio");
                 System.out.println("8-Círculo");
                 scanner.close();
+                String formaGeometrica = scanner.nextLine().toLowerCase();
+                geometriaPlana.calcular(categoria, formaGeometrica, scanner);
                 break;
             case 2:
                 System.out.println("Agora, escolha a forma geométrica:");
@@ -36,6 +40,7 @@ public class app {
                 System.out.println("12-Cone");
                 System.out.println("13-Esfera");
                 scanner.close();
+                espacial.calcular(categoria, formaGeometrica, scanner);
                 break;
 
 
